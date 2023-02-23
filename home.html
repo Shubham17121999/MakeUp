@@ -6,7 +6,9 @@
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>Makeup,Skinncare & Beauty Products</title>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+                   
                     <style>
+ /* top section and nav bar  */
                                         .offer{
                                                             height: 55px;
                                                           
@@ -79,22 +81,233 @@
                                         color: white;
                                         font-size: medium;
                                        }
-                                       
-                                      
 
+
+
+
+
+
+
+
+
+
+
+/* Slider part css */
+                                       *{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: -webkit-pictograph;
+		}
+		main{
+			width: 100%;
+			height: 840px;
+			/*background: red;*/
+			margin: 10px auto;
+			position: relative;
+			padding: 5px 0;
+		}
+		main .text{
+			padding: 10px;
+			text-align: center;
+			/*font-size: 30px;*/
+			color: #554;
+		}
+		.text h1{
+			font-size: 50px;
+		}
+		.text p{
+			width: 60%;
+			padding: 5px;
+			margin: auto;
+			line-height: 30px;
+		}
+		main header{
+			width: 98%;
+			height: 60px;
+			margin: 0 auto;
+			/*background: gray;*/
+			display: flex;
+			align-items: center;
+			padding: 20px;
+			justify-content: space-between;
+			border-bottom: 2px solid #ddd;
+		}
+		header p span{
+			font-size: 40px;
+		    margin: 0 5px;
+		    cursor: pointer;
+		    color: #555;
+		     width: 30px;
+		    height: 30px;
+		    display: inline-block;
+		    line-height: 19px;
+		    text-align: center;
+		    border-radius: 3px;
+		}
+		header p span:hover{
+			background: #222;
+    		color: white;
+		}
+		section{
+			width: 98%;
+			height: 600px;
+			/*background: red;*/
+			margin: auto;
+			display: flex;
+			align-items: center;
+			overflow-x: auto;
+		}
+		section::-webkit-scrollbar{
+			display: none;
+		}
+		section .product{
+			min-width: 35%;
+			height: 90%;
+			background: whitesmoke;
+			margin:  0 20px  0 0;
+			border-radius: 20px;
+			position: relative;
+			left: 0;
+			transition: 0.5s;
+
+		}
+		picture{
+			width: 100%;
+			height: 70%;
+			padding: 20px;
+			/*background: green;*/
+			display: flex;
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+		picture img{
+			width: 100%;
+		}
+		.detail,
+		.button{
+			width: 90%;
+			/*background: red;*/
+			margin: auto;
+			padding: 5px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 50px;
+			font-size: 20px;
+			color: #444;
+		}
+		small{color: #555;}
+		a{
+			text-decoration: none;
+			padding: 6px 14px;
+		    font-size: 15px;
+		    margin: 5px 0 0 20px;
+		    display: inline-block;
+		    
+		}
+		p.star{
+			margin: 5px auto;
+		    width: 65%;
+		    font-size: 25px;
+		    color: #808080;
+		}
+    .bat{
+      display: flex;
+      margin: auto;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+    }
+    .sup{
+      width: 17%;
+     
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    .sup:hover{
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+       
+    .sup img{
+      width: 99%;
+      border-radius: 5px;
+    }
+    .sup h4{
+      padding-left: 10px;
+    }
+    .sup p{
+      padding-left: 10px;
+     
+    }
+    .sup a{
+      padding-left: 10px;
+      padding-bottom: 5px;
+     
+    }
+    .choosen h2{
+      margin-left: 10px;
+
+    }
+
+
+    /* media querry */
+		@media (max-width: 768px) {
+      /* for slider */
+			.text h1{
+				font-size: 35px;
+			}
+			.text p{
+				width: 90%;
+			}
+			header h1{
+				font-size: 25px;
+			}
+			header p span{
+				font-size: 30px;
+			}
+			section .product {
+				min-width: 49%;
+				margin:  0 10px  0 0;
+			}
+			.detail, .button{
+				font-size: 16px;
+			}
+			a{
+				padding: 6px 10px;
+			}
+
+
+
+
+		}
+
+                                       
+
+
+
+
+
+
+                                      
 
                     </style>
 </head>
+<!-- here the html starts -->
+
 <body>
+
+  <!-- Top section starts -->
                     <div class="offer">
                                         <a href="home.html">Beauty Insiders get FREE shipping on all orders.exclusions & terms are apply <b>Learn More</b></a>
                     </div>
+     <!-- navbar1 starts -->
                     <nav class="nav1">
                                   <div class="heading">
                                         <h3> <div>MAKE</div> UP</h3>
-                                      </div>
+                                       </div>
                                         <form action="home.html">
-                                                            <input type="text" placeholder="Search.." name="search">
+                                                            <input type="text" placeholder="  Search.." name="search">
                                                             <button type="submit"><i class="fa fa-search"></i></button>
                                                           </form>
                                                          <div><a href="store.html "> <i class="fa-solid fa-shop"></i> Stores & Services  </a>
@@ -106,16 +319,21 @@
                                                             <a href="signin.html">  <i class="fa-solid fa-user"></i>Signin</a>
                                                           </div  >
                                                           <div class="social">
-                                                            <i class="fa-regular fa-comment"></i>
+                                                            <a href=""> <i class="fa-regular fa-comment"></i></a>
+                                                            
                                                           </div>
                                                           <div class="social">
-                                                            <i class="fa-regular fa-heart"></i>
+                                                            <a href=""> <i class="fa-regular fa-heart"></i></a>
+                                                           
                                                           </div>
                                                           <div class="social">
-                                                            <i class="fa-solid fa-basket-shopping"></i>
+                                                            <a href=""> <i class="fa-solid fa-basket-shopping"></i></a>
+                                                           
                                                           </div>
                                                           
                                         </nav>
+
+ <!-- navbar2 starts -->                                       
                                         <nav class="nav2">
                                            <a href="">New</a>
                                            <a href="">Brands</a>
@@ -133,7 +351,402 @@
 
 
                                         </nav>
+
+<!-- Slider1 Starts -->
+                                      <main>  
+                                        
+                                        <header>
+                                        
+                                          <p>
+                                            <span>&#139;</span>
+                                            <span>&#155;</span>
+                                          </p>
+                                        </header>
+                                        <section>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://www.sephora.com/contentimages/2023-2-23-glossier-site-desktop-mweb-home-page-rwd-hero-banner-collection-1000x750-en-us-can.jpg?imwidth=545" alt="">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>Glossier is finally at Makeup </b><br>
+                                                <small>Stock up on the cult-fave makeup,skincare fregance you love.</small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://www.sephora.com/contentimages/2023-2-23-glossier-site-desktop-mweb-home-page-rwd-hero-banner-fragrance-1000x750-en-us-can.jpg?imwidth=545" alt="">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>Glossier You Eau de Parfum</b><br>
+                                                <small>Now at sephora! This cult fave fregnace Lorem, ipsum dolor sit amet consectetur adipisicing elit. </small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://www.sephora.com/contentimages/2023-3-1-make-up-for-ever-hd-skin-matte-velvet-compact-site-desktop-mweb-home-page-rwd-hero-banner-1000x750-en-us-can-v2.jpg?imwidth=545" alt="">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>Make Up for Ever HD Skin</b><br>
+                                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, beatae!</small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://www.sephora.com/contentimages/2023-02-15-slotting-just-arrived-v4-standard-site-responsive-home-page-hero-banner-US_01.jpg?imwidth=545" alt="">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>The Latest Lineup</b><br>
+                                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, provident.</small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://www.sephora.com/contentimages/2023-scalp-mbc-site-home-page-hero-banner-thinning-1000x750-image-only-us.jpg?imwidth=545" alt="">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>Target Thinning</b><br>
+                                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, modi.</small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://www.sephora.com/contentimages/2023-scalp-mbc-site-home-page-hero-banner-dandruff-1000x750-image-only-us.jpg?imwidth=545" alt="">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>Treat Dandruff</b><br>
+                                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illo.</small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://c4.wallpaperflare.com/wallpaper/677/968/954/commercial-gucci-bamboo-gal-gadot-4k-wallpaper-preview.jpg">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>Top Lipstick</b><br>
+                                                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, cupiditate.</small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://www.thebeautyinsiders.com/wp-content/uploads/beauty-products-830x440.jpg" alt="">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>Best Soap</b><br>
+                                                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, assumenda.</small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://image.freepik.com/free-photo/beautiful-woman-using-skin-care-product-moisturizer-lotion-skincare-taking-care-her-dry-complexion-moisturizing-cream-female-hands_118454-4092.jpg" alt="">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>Best Korean Products</b><br>
+                                                <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, ipsum.</small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/06/13/lifestyle.jpg" alt="">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>Bathing Products</b><br>
+                                                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, aperiam!</small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://i.dailymail.co.uk/i/newpix/2018/03/28/02/4A9F021B00000578-5551901-_Slugging_consists_of_coating_the_skin_in_a_slick_of_Vaseline_be-a-31_1522201625124.jpg" alt="">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>Bath Soap</b><br>
+                                                <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, aut.</small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                          <div class="product">
+                                            <picture>
+                                              <img src="https://galoremag.com/wp-content/uploads/2017/02/korean_beauty_nordstrom_galore.jpg" alt="">
+                                            </picture>
+                                            <div class="detail">
+                                              <p>
+                                                <b>Product of surgery</b><br>
+                                                <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, a?</small>
+                                              </p>
+                                              <samp>$45.00</samp>
+                                            </div>
+                                            <div class="button">
+                                              <p class="star">
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                                <strong>&star;</strong>
+                                              </p>
+                                              <a href="#">Add-cart</a>
+                                            </div>
+                                          </div>
+                                        </section>
+                                      </main>
+                                     
+                                      <hr>
+                                      <br>
+                                      <br>
+<!-- Random cards1 start -->
+<div class="choosen">
+  <h2>Choosen For You</h2>
+  <br>
+  <br>
+  <br>
+  <div class="bat">
+     <div class="sup">
+      <img src="https://www.sephora.com/productimages/sku/s2555811-main-zoom.jpg?imwidth=166" alt="">
+      <h4>Hunda Beauty</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores!</p>
+      <a href="">Add-Cart</a>
+     </div>
+     <div class="sup">
+      <img src="https://www.sephora.com/productimages/sku/s2084648-main-zoom.jpg?imwidth=166" alt="">
+      <h4>Too Faced</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores!</p>
+      <a href="">Add-Cart</a>
+     </div>
+     <div class="sup">
+      <img src="https://www.sephora.com/productimages/sku/s2518959-main-zoom.jpg?pb=allure-2022-bestofbeauty-badge&imwidth=166" alt="">
+      <h4>Rare Beauty</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores!</p>
+      <a href="">Add-Cart</a>
+     </div>
+     <div class="sup">
+      <img src="https://www.sephora.com/productimages/sku/s2590032-main-zoom.jpg?imwidth=166" alt="">
+      <h4>Fenty Beauty</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores!</p>
+      <a href="">Add-Cart</a>
+     </div>
+     <div class="sup">
+      <img src="https://www.sephora.com/productimages/sku/s2360121-main-zoom.jpg?imwidth=166" alt="">
+      <h4>Two Faced</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores!</p>
+      <a href="">Add-Cart</a>
+     </div>
+
+  </div>
+
+</div>
+<br>
+<br>
+<div class="choosen">
+  <h2>Just Droped</h2>
+  <br>
+  <br>
+  <br>
+  <div class="bat">
+     <div class="sup">
+      <img src="https://www.sephora.com/productimages/sku/s2640472-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166" alt="">
+      <h4>Laura Mercier</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a href="">Add-Cart</a>
+     </div>
+     <div class="sup">
+      <img src="https://www.sephora.com/productimages/sku/s2640332-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166" alt="">
+      <h4>Bio Scence</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a href="">Add-Cart</a>
+     </div>
+     <div class="sup">
+      <img src="https://www.sephora.com/productimages/sku/s2648459-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166" alt="">
+      <h4>Olen Herinksen</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a href="">Add-Cart</a>
+     </div>
+     <div class="sup">
+      <img src="https://www.sephora.com/productimages/sku/s2637981-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166" alt="">
+      <h4>Ilia</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a href="">Add-Cart</a>
+     </div>
+     <div class="sup">
+      <img src="https://www.sephora.com/productimages/sku/s2619534-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166" alt="">
+      <h4>Langage</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a href="">Add-Cart</a>
+     </div>
+
+  </div>
+
+</div>
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+
+
+                                      
+                                        
+
+
+                                        
+
+
+
+
+
+
+
+
+
+
+
+                                       
                    
 </body>
+
+
+
 
 </html>
