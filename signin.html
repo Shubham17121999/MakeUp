@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Makeup,Skinncare & Beauty Products</title>
+             <style>
+                    /* .card{
+                                        border: 2px solid black;
+                                        width: 40%;
+                                        margin: auto;
+                    } */
+                   
+       .card{
+                    width: 40%;
+                    font-family: sans-serif;
+          
+          margin: auto;
+          margin-top: 10%;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          justify-content: space-around;
+       }
+        #form{
+            display: grid;
+            width: 90%;
+            gap:20px  ;
+            margin: auto; 
+            padding-bottom: 3%;
+        }
+        #sign{
+            width: 80%;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 50px;
+            background-color: black;
+            color: rgb(238, 232, 232);
+        }
+        #create{
+            width: 80%;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 50px;
+            background-color: white;
+        }
+
+        input{
+         
+            height: 30px;
+            font-size: 20px;
+        }
+
+
+    
+
+
+
+
+
+
+
+             </style>
+
+
+</head>
+<body>
+                    <div class="card">
+                                        <form id = "form">
+                                                            <h1>Sign in </h1>
+                                                            <h4>Sign in or create an account to enjoy<b> FREE standard shipping </b>on all orders.</h4>
+                                                           
+                                                            <input id = "name"  type="text" placeholder = "Enter username" required/>
+                                                    
+                                                            <input id = "pass"  type="text" placeholder = "Enter password" required />
+                                                            <input id ="sign" type="submit" value="Sign In"/>
+                                                            <h2>New to Makeup?</h2>
+                                                            <p>By clicking “Sign In”, you (1) agree to the current version of our <u> TERMS OF USE</u> and (2) have read Sephora’s Privacy Policy
+
+                                                            </p>
+                                                            <input id= "create" type="submit" value="Create Account"/>
+                                                            <br>
+                                                            <br>
+                                                        </form>
+
+                    </div>
+                   
+</body>
+<script>
+                  
+             document.querySelector("#create")
+             document.addEventListener("click",function(){
+
+                window.location.href = "create.html"
+                })  
+</script>
+
+
+
+</html>
