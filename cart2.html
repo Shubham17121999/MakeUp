@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+       
+        font-family: "helvetica neue",helvetica,arial,sans-serif; 
+        width: 50%;
+        margin: auto;
+ 
+      
+    }
+       .priceDiv{
+        display: flex;
+        justify-content: space-between;  
+    }
+
+  
+
+    #container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        height: auto;
+        /* border: 1px solid black; */
+        gap: 40px; 
+        box-shadow: rgba(16, 15, 15, 0.2) 0px 2px 8px 0px;  
+    }
+   
+   
+    #totalContainer>div>img{
+        width: 60px;
+        
+    }
+    #totalContainer>div{
+        display: flex;
+      
+      
+ 
+    }
+    #voucher-container{
+        /* border: 1px solid green; */
+        display: flex;
+        height: auto;
+        margin-left: 20px;
+        width:80%
+}
+    #voucher-container>img{
+        width: 200px;
+    }
+    #div2{
+        /* display: flex; */
+        margin-left: 15%;
+        width: 40%;
+        height: 100px;
+    }
+    button{
+        color: blue;
+        background-color: white;
+        border-color: white;
+        width: 80px;
+        height: 40px;
+        box-shadow: white
+
+    }
+    .line{
+        border: 0.5px solid rgb(201, 195, 195);
+        width: 100%;
+        margin: auto;
+    }
+    #P{
+        width: 100%;
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+        border: 0.5px solid rgb(172, 165, 165);
+    }
+    #total{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+   
+</style>
+<body>
+    <h1>My Basket</h1>
+        <div id="totalContainer">
+    <div>
+        <img src="data:image/png;base64,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"/>
+        <p>You now qualify for Free Shipping!</p>
+    </div>
+
+    <div class="line"></div>
+        
+    </div >
+    <div id="voucher-container">
+
+    <div id = "container">
+        <div id="line"></div>
+    </div>
+</div>
+    <h1 style="text-align: center;">Total</h1>
+    <div style="text-align: center;" id = "total">0</div>
+    <button id="P">Proceed to Pay</button>
+</div>
+</body>
+<script>
+                    // All JS Goes Here
+                  let  images =[
+                 " https://www.sephora.com/productimages/sku/s2649390-main-zoom.jpg?imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2650331-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2648459-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2637981-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2642296-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166",
+                 "https://www.sephora.com/contentimages/promo/beautyoffers/2023/February/2023-2-26-paulas-choice-pro-collagen-multi-peptide-booster-site-desktop-mobile-app-beauty-offers-page-banner-en-us.jpg?imwidth=240",
+                
+                
+                 " https://www.sephora.com/productimages/sku/s2649390-main-zoom.jpg?imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2650331-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2648459-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2637981-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2642296-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166",
+                 "https://www.sephora.com/contentimages/promo/beautyoffers/2023/February/2023-2-26-paulas-choice-pro-collagen-multi-peptide-booster-site-desktop-mobile-app-beauty-offers-page-banner-en-us.jpg?imwidth=240",
+                
+                
+                 " https://www.sephora.com/productimages/sku/s2649390-main-zoom.jpg?imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2650331-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2648459-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2637981-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+                 " https://www.sephora.com/productimages/sku/s2642296-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166",
+                 "https://www.sephora.com/contentimages/promo/beautyoffers/2023/February/2023-2-26-paulas-choice-pro-collagen-multi-peptide-booster-site-desktop-mobile-app-beauty-offers-page-banner-en-us.jpg?imwidth=240",
+                
+                
+                  ]
+                
+                
+                        let body = document.getElementById("voucher-container");
+                    let data =JSON.parse(localStorage.getItem("vouchers"))||[];
+                console.log(data);
+                
+                
+                let total =document.getElementById("total");
+
+                
+                
+                
+                
+                
+                
+                 display(data)
+                    function display(data){
+                      body.innerHTML ="";
+                   
+                     
+                      data.forEach((ele,ind)=> {
+                       
+                          
+                        
+                       
+                
+                       
+                        let sum=0;
+                          let card =document.createElement("div");
+                        let image =document.createElement("img");
+                        let name =document.createElement("h3");
+                        let price =document.createElement("h4");
+                        let button =document.createElement("button");
+                        button.innerText="delete";
+                        button.addEventListener("click",()=>{
+                         let ele= data.splice(ind,1);
+                         localStorage.setItem("vouchers",JSON.stringify(data));
+                         display(data)
+                        })
+                        
+                           sum=sum+Number(ele.price)
+                
+                
+                
+                
+                          image.src=images[ind];
+                        name.textContent=ele.name;
+                        price.textContent="₹"+ele.price;
+                        card.append(image,name,price,button);
+                        
+                
+                
+                        body.append(card);
+                        console.log(ele)
+                
+                       
+                       
+                        
+                
+                     
+                      });
+
+                      let sum=0;
+                      for(let i=0; i<data.length; i++){
+                                        sum =sum+data[i].price;
+                      }
+                      total.textContent =sum;
+                     
+                    }
+
+
+
+                    
+
+
+
+
+
+
+
+
+                    document.querySelector("#P").addEventListener("click",function(){
+        window.location.href = "pay.html"
+    })
+                    
+                  </script>
+</html>

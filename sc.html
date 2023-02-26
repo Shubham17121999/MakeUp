@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup,Skinncare & Beauty Products</title>
+          
+</head>
+<style>
+
+    #main{
+        width: 650px;
+        height: 180px;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 15%;
+    }
+   
+    #one{
+    display: flex;
+   justify-content: space-around;
+    width: 600px;
+    padding-bottom: 5px
+    }
+
+    #two{
+        width: 600px;
+    }
+
+  
+    #Create{
+        
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40px;
+        padding: 5px 15px;
+        background-color: white;
+        width: 250px;
+    }
+
+    #Sign{
+        
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40px;
+        background-color: black;
+        padding: 5px 15px;
+        color: white;
+        width: 250px;
+    
+    }
+    div>button{
+        margin-left: 6%;
+    }
+    #one>img{
+
+      width: 80px;
+      
+    }
+    div>p{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+</style>
+<body>
+
+    <div id="main">
+   <div id = "one">
+  
+    <img src="https://community.sephora.com/t5/image/serverpage/avatar-name/default-avatar/avatar-theme/sephora/avatar-collection/sephora/avatar-display-size/profile/version/4" alt=""/>
+      <p>Good morning, Beautiful. ☀️<br>
+        Sign in for a more personalized experience</p>
+     
+
+    </div>
+
+    <div id="two">
+        <button id = "Create">Sign In</button>
+        <button id = "Sign"> Create Account</button>         
+    </div> 
+    
+</div>
+    
+</body>
+</html>
+<script>
+document
+    .querySelector("#Create").addEventListener("click",function(){
+
+     window.location.href = "signin.html"
+    })
+    
+    document
+    .querySelector("#Sign").addEventListener("click",function(){
+
+     window.location.href = "create.html"
+    })
+
+</script>

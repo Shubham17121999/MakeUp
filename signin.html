@@ -5,7 +5,7 @@
                     <meta http-equiv="X-UA-Compatible" content="IE=edge">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>Makeup,Skinncare & Beauty Products</title>
-             <style>
+                    <style>
                     /* .card{
                                         border: 2px solid black;
                                         width: 40%;
@@ -86,13 +86,48 @@
                    
 </body>
 <script>
-                  
-             document.querySelector("#create")
-             document.addEventListener("click",function(){
+ 
 
-                window.location.href = "create.html"
-                })  
-</script>
+
+    var reguser = JSON.parse(localStorage.getItem("signup"))
+    console.log(reguser)
+    
+    
+    document.querySelector("#form").addEventListener("submit",formsub)
+    
+    var form = document.querySelector("#form")
+    
+    function formsub(event){
+    event.preventDefault();
+        
+        var name = form.name.value;
+        var pass = form.pass.value;
+        // console.log(name,pass)
+    
+        // var x = "login failed"
+        for(var i=0; i<reguser.length; i++)
+        {
+       
+            if(reguser[i].name == name && reguser[i].pass==pass)
+            {  
+                alert("login Sucessful")
+                window.location.href="index.html"
+            } 
+            else{
+                alert("login fail")
+            }
+        }  
+       
+    }
+    
+    
+    document
+                    .querySelector("#create")
+                    .addEventListener("click",function(){
+    
+                    window.location.href = "create.html"
+                    })
+    </script>
 
 
 

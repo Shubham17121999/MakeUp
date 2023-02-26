@@ -4,9 +4,130 @@
                     <meta charset="UTF-8">
                     <meta http-equiv="X-UA-Compatible" content="IE=edge">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title></title>
+                    <title>Makeup,Skinncare & Beauty Products</title>
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+                    <style>
+                                         * body{
+            font-family: sans-serif;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 55%;
+            margin: auto;
+            margin-top: 4%;
+        }
+    
+      
+        #form>input{
+            margin-top: 3%;
+            display: grid;
+            justify-content: space-around;
+            height: 30px;
+            font-size: 20px;
+            width: 80%;
+            border: 1px solid rgb(224, 217, 217);
+           
+        }
+        #form>:last-child{
+            width: 40%;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 50px;
+            background-color: black;
+            color: rgb(238, 232, 232);
+        }
+        
+        #one{
+            width: 80%;
+        
+        }
+        #one>p:first-child{
+            text-align: center;
+            border: 1px solid rgb(224, 217, 217);
+            height: 40px;
+            padding-top: 2%;
+            font-weight: bold;
+            font-size: 25px;
+        }
+    
+        #p{
+            font-size: 17px;
+            font-style: italic;
+            
+        }
+        #h{
+            /* font-style: italic; */
+            font-family: "Sofia", sans-serif;
+        }  
+        #main{
+            width: 80%;
+            justify-content: space-around;
+            padding-top: 2%;
+            margin: auto;
+          padding-bottom: 20px;
+        }       
+                    </style>
+               
 </head>
 <body>
-                    
+                    <div id = "main">
+                                        <div id="one">
+                                            <p>Create an Account</p>
+                                        <h1 id="h"> Beauty INSIDER<h1>
+                                        <p id="p">Join the Beauty Insider loyalty program. Earn points, redeem <br> rewards, and more.</p>
+                                        </div>
+                                        <form id ="form"> 
+                                        <!-- <div>
+                                        <input id = "fname" type = "text" placeholder = "Enter user name"/>
+                                        <input id = "lname" type = "text" placeholder = "Enter user name"/>
+                                        </div> -->
+                                        <input id = "name" type = "text" placeholder = "User name" required/>
+                                    
+                                        <input id = "email" type = "text" placeholder = "Email address" required/>
+                                       
+                                        <input  id = "pass" type = "password" placeholder = "Password (6 to 12 characters" required/>
+                                        <input  id = "phone" type = "number" placeholder = " Phone number(optional)" required/>
+                                        <input id = "zip" type = "number" placeholder = "ZIP Code(to hear about store events near you" required/>
+                                        <p>By clicking “Join Now” you acknowledge that you are a U.S. or Canada resident and (1) have read Sephora’s Privacy Policy and Notice of Financial Incentive, (2), agree to <u>TERMS OF USE, BEAUTY INSIDER TERMS,</u> and to automatically receive Beauty Insider offers and notifications via email.</p>
+                                    
+                                        <input type = "submit" value="Join Now"/>
+                                        </form> 
+                                    
+                                    </div>
+                                    
 </body>
+<script>
+
+    document.querySelector("#form").addEventListener("submit",formsub)
+
+    var arr = JSON.parse(localStorage.getItem("signup")) ||[];
+    console.log(arr)
+
+        function formsub(){
+
+        event.preventDefault();
+
+                var obj = {
+
+                    name:document.querySelector("#name").value,
+                    // fname:document.querySelector("#fname").value,
+                    // lname:document.querySelector("#lname").value,
+                     email:document.querySelector("#email").value,
+                     pass:document.querySelector("#pass").value,
+                     phone:document.querySelector("#phone").value,
+                     zip:document.querySelector("#zip").value
+                };
+                arr.push(obj);
+                // console.log(obj)
+
+                localStorage.setItem("signup",JSON.stringify(arr));
+
+                document
+                .querySelector("form>input:last-child")
+               
+
+                window.location.href = "signin.html"
+                
+                }; 
+
+</script>
+
 </html>
