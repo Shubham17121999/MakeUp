@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     #form{
+        font-family: "helvetica neue",helvetica,arial,sans-serif;
+   
+     } 
+    .h{
+        height: 90px;
+        letter-spacing: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-family: "helvetica neue",helvetica,arial,sans-serif;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+       
+    }
+
+    #container{
+      width: 700px;
+  
+      height: auto;
+    
+      margin: auto;
+      padding-top: 1px;
+ 
+      box-sizing: border-box;
+      padding: 10px;
+   
+     
+    }
+    .expiry{
+        display: flex;
+        /* border: 1px solid black; */
+        /* justify-content: space-between; */
+        margin-top: 5%;
+    }
+    .firstRow{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+       
+  
+    #inputotpdiv{
+        /* border: 1px solid green; */
+        width: 300px;
+        margin: auto;
+        align-items: center;
+    }
+    
+    .h2{
+        text-align: center;
+        
+    }
+    #otp{
+        background-color: white;
+        border-radius: 5px;
+        width: 200px;
+        height: 30px;
+        color: rgb(0, 0, 0);
+        font-weight: bold ;
+        margin-left: 250px;
+        margin-top: 2%;
+
+    }
+    #img{
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+  #card{
+      width: 250px;
+      margin-bottom: 2%;
+  }
+  .in{
+      height: 25px;
+      width: 170px;
+    
+  }
+  .lastinput
+  {
+      width: 200px;
+   
+
+  }
+  #inputotp{
+      margin-left: 60px;
+      margin-bottom: 15px;
+  }
+  #otp:hover{
+    
+    background-color: black;
+    color:white;
+  }
+  #line{
+      border: 1px solid rgb(196, 192, 192);
+  }
+  .paymentimg{
+      width: 80px;
+  }
+  .p{
+      display: flex;
+    width: 100%;
+  }
+  .textp{
+      margin-left: 5%;
+  }
+  #flex>img{
+     width: 50px; 
+     margin-top: 5%;
+ 
+  }
+  #flex{
+      margin-left: 4%;
+  }
+
+  .cvv{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 2%;
+      margin-left: -5%;
+    
+  }
+  .lassRow{
+      display: flex; 
+      
+  }
+  #two{
+      margin-left: 5%;
+  }
+  #three{
+      margin-left: 10%;
+  }
+ 
+  .name{
+      display: flex;
+      justify-content: space-between;
+  }
+  
+
+</style>
+
+<body>
+    <p class="h">SEPHORA</p>
+    <form id ="form">
+    <div id="container">
+        
+        <div>
+            <h2>Checkout</h2>
+
+            <div id="line"></div>
+
+            <div>
+                <h2>Shipping Address</h2>
+                <p>James</p>
+                <p>4500 London Ave</p>
+                <p>Elizabethtown, PA 17022-8734</p>
+            </div>
+
+            <div id="line"></div>
+
+            <div>
+                <h2>Delivery & Gift Options</h2>
+                <h3>$6.50-Standard</h3>
+            </div>
+
+            <div id="line"></div>
+            <h2>Payment Method</h2>
+
+            <div class="p">
+            <img class="paymentimg" src="https://www.sephora.com/img/ufe/payments/payPal.svg" alt=""/>
+            <h4 class="textp">Pay with Paypal</h4>
+            </div>
+           
+            <div id="line"></div>
+
+            <div class="p">
+            <img class="paymentimg"src="https://www.sephora.com/img/ufe/payments/klarna.svg" alt=""/>
+            <h4 class="textp">Pay with 4 interest-free payments</h4>
+        </div>
+
+        <div id="line"></div>
+            
+            <div class="p">
+            <h4> Pay with credit or debit card</h4>
+            <div id="flex">
+            <img id="sephora" src="https://www.sephora.com/img/ufe/payments/sephora.svg" alt=""/>
+            <img src="https://www.sephora.com/img/ufe/payments/visa.svg" alt=""/>
+            <img src="https://www.sephora.com/img/ufe/payments/masterCard.svg" alt=""/>
+            <img src="https://www.sephora.com/img/ufe/payments/americanExpress.svg" alt=""/>
+            <img src="https://www.sephora.com/img/ufe/payments/discover.svg" alt=""/>
+            <img src="https://www.sephora.com/img/ufe/payments/JCPenney.svg" alt=""/>
+            </div>
+
+            </div>
+
+         
+        <div class="secondRow">
+           
+                <div>
+                    <input class="in" id="card" type="password" placeholder="Card number*" required> 
+                </div>
+        <div>
+
+            <div class="cvv">
+                
+                <div>
+                    <input class="in" type="number" placeholder="MM*" required> 
+                </div>
+
+                <div >
+                    <input class="in" id="two"  type="number" placeholder="YY*" required> 
+                </div>
+
+                <div>
+                    <input class="in" id="three"   type="password" placeholder="CVV/CVC*" required> 
+                </div>
+
+            </div>
+
+            <div class="name">
+           
+                <div>
+                    <input class="in" id="card" type="text" placeholder="First name*" required> 
+                </div>
+
+                <div>
+                    <input class="in" id="card"  type="text" placeholder="Last name*" required> 
+                </div>
+           
+            </div>
+      
+            <div id="line"></div>
+            <div >
+                
+
+                <div  id="inputotpdiv" style="display:none">
+                    <h1 class="h2">Enter OTP</h1>
+                
+                    <input id="inputotp" type="number" value="" placeholder="One Time Password"/>
+                </div>
+
+                    <input id="otp" type = "submit" value="GET OTP" />
+              
+            </div>
+     
+        </form>
+  
+
+</body>
+</html>
+<script>
+
+   
+
+    document
+    .querySelector("#form").addEventListener("submit",function(event){
+        event.preventDefault()
+
+    //   document.querySelector("#otp").addEventListener("click",function(){
+
+        document.querySelector("#inputotpdiv").style="display:block"
+        document.querySelector("#otp").value="Place Order"
+
+    //   })
+
+    //    
+    document.querySelector("#otp").addEventListener("click",myfunction)
+    
+    function myfunction()
+    {
+  
+        var input = document.querySelector("#inputotp").value
+        var arr = 1234
+
+        console.log(input)
+
+
+        // console.log(typeof(arr))
+        
+        if(input==arr)
+        {
+           
+            window.location.href = "pay.html"
+      
+        }
+        else{
+            // console.log(arr)
+            alert("Invalid OTP!")
+        }
+        
+    }
+       
+    })
+    
+    
+        
+    
+
+
+</script>
