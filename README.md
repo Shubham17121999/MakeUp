@@ -52,6 +52,11 @@ The Makeup Website is a front-end project designed to showcase makeup products a
 
 Follow these steps to get the project up and running on your local machine.
 
+
+##Deployed Link
+
+   https://cool-rolypoly-b1333e.netlify.app/
+
 ### Prerequisites
 
 To run this project locally, you need the following software/tools:
