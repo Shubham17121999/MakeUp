@@ -5,18 +5,13 @@
 Welcome to the Makeup Website project! This front-end project showcases makeup products and provides user authentication features for login and signup. Users can explore makeup products and add them to their cart.
 
 ## Table of Contents
+![Alt text](Make.png)
 
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-
+- [Project Overview](home.png)
+![Alt text](new.png)
+- [Features](cart.png)
+![Alt text](SL.png)
+![Alt text](signin.png)
 ## Project Overview
 
 The Makeup Website is a front-end project designed to showcase makeup products and provide a user-friendly interface for exploring and shopping for makeup items. It includes the following features:
@@ -69,4 +64,4 @@ To run this project locally, you need the following software/tools:
 1. Clone the GitHub repository to your local machine:
 
    ```shell
-   git clone https://github.com/your-username/makeup-website.git
+   git clone https://github.com/Shubham17121999/makeup-website.git
